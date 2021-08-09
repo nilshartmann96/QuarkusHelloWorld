@@ -16,7 +16,7 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response greet() {
-        return service.getGreeting();
+        return Response.ok(this.service.getGreeting()).build();
     }
 
 }
