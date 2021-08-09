@@ -5,10 +5,12 @@ import java.util.Collections;
 import java.util.Map;
 
 @ApplicationScoped
-public class BaseGreetingService implements GreetingService {
+@Informal
+public class RepoGreetingService implements GreetingService {
 
     private final Map<String, String> message = Collections.singletonMap("message", "Hello World!");
 
+    @Override
     public Map<String, String> getGreeting() {
         return message;
     }
