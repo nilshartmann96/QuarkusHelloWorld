@@ -11,6 +11,7 @@ import javax.ws.rs.core.Response;
 public class GreetingResource {
 
     @Inject
+    @Informal
     private GreetingService service;
 
     @GET

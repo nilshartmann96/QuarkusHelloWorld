@@ -1,15 +1,14 @@
 package org.acme.getting.started;
 
 import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.inject.Default;
 import java.util.Collections;
 import java.util.Map;
 
 @ApplicationScoped
-@Default
-public class BaseGreetingService implements GreetingService {
+@Informal
+public class RepoGreetingService implements GreetingService {
 
-    private final Map<String, String> message = Collections.singletonMap("message", "Hello World ohne Qualifier-Implementierung!");
+    private final Map<String, String> message = Collections.singletonMap("message", "Hello World mit Qualifier-Implementierung!");
 
     @Override
     public Map<String, String> getGreeting() {
