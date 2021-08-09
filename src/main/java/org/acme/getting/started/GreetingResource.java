@@ -11,7 +11,7 @@ import javax.ws.rs.core.Response;
 public class GreetingResource {
 
     @Inject
-    private GreetingService service;
+    private BaseGreetingService service;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
