@@ -40,4 +40,4 @@ nb-configuration.xml
 
 
 ### Sensitive Data ###
-src/main/resources/application.properties
+**/application.properties
