@@ -1,9 +1,7 @@
 package org.acme.getting.started;
 
-import java.util.Map;
+import java.util.List;
 
 public interface GreetingService {
-
-    Map<String, String> getGreeting();
-
+    List<Message> getGreeting();
 }
