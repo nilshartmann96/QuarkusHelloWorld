@@ -12,7 +12,7 @@ public class GreetingResource {
 
     @Inject
     @Informal
-    private GreetingService service;
+    GreetingService service;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
