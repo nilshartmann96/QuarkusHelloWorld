@@ -2,7 +2,7 @@ package org.acme.getting.started;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import java.util.*;
+import java.util.List;
 
 @ApplicationScoped
 @Informal
